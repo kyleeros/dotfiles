@@ -12,3 +12,11 @@ alias precompile="RAILS_ENV=production bin/rake assets:precompile"
 alias grep='grep --color=auto'
 alias f='sudo find / -name'
 alias cd..='cd ..'
+alias mkdir='mkdir -pv'
+
+
+function lc(){
+	ls -l $1 | wc -l
+}
+
+export -f lc
