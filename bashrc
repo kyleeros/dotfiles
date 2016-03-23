@@ -16,7 +16,8 @@ alias mkdir='mkdir -pv'
 
 
 function lc(){
-	ls -l $1 | wc -l
+	#ls -l $1 | wc -l
+	find $1 -maxdepth 1 -type f | wc -l
 }
 
 export -f lc
